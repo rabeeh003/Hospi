@@ -6,6 +6,7 @@ Home | hospi
 
 {% block content %}
 {% load static %}
+<!-- banner -->
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -15,7 +16,6 @@ Home | hospi
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
         <img src="{% static '/img/car1.jpg'%}" class="d-block w-100" alt="...">
-        <
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <img src="{% static '/img/car2.jpg'%}" class="d-block w-100" alt="...">
@@ -34,5 +34,52 @@ Home | hospi
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+  <!-- body start -->
+  <div class="container-fluid my-5">
+    <div class="row justify-content-evenly">
+      <div class="card mb-3 mx-2 my-2" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://st5.depositphotos.com/15814498/65482/i/450/depositphotos_654826928-stock-photo-team-surgeons-operating-room-bent.jpg  " class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Operation Java</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Calicut</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 my-2 mx-2" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00CEn65JrEcwz7vQHQWqLbPZW4g8aSJ9QBQ&usqp=CAU" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Python Check</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Malappuram</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 my-2 mx-2" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://st2.depositphotos.com/1753833/5650/i/450/depositphotos_56503165-stock-photo-newborn-baby.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Python Check</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Malappuram</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock content %}

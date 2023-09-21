@@ -14,6 +14,11 @@ def department(request):
 def contact(request):
     return render(request,"contact.html")
 def booking(request):
+    if request.method == "POST":
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request,'conform.html')
     form = BookingForm()
     dict_form={
         'form': form
