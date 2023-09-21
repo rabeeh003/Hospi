@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Doctor | hospi
+{% endblock title %}
+
+{% block content %}
+<h1 class="m-3">Doctors</h1>
+<hr>
+
+
+<div class="container-fluid p-5"></div>
+<div class="row justify-content-evenly">
+    {% for col in doct %}
+    <div class="col-3 card text-center mx-3 my-3" style=" display: inline-block ;">
+        <img src="{{col.doc_image.url}}" class="card-img-top" alt="docter.image">
+        <div class="card-body">
+          <h5 class="card-title">{{col.doc_name}}</h5>
+          <p class="card-text">{{col.doc_spec}}</p>
+          <h6 class="card-text">{{col.dep_name}} Department</h6>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+{% endblock content %}
