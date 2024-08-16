@@ -1,6 +1,6 @@
 # Hospi
 
-Hospi is a small hospital doctor booking website developed with Django and Bootstrap. This project allows patients to book a slot with a doctor using their phone number, helping to save time. The hospital can easily manage tokens and patients. The website also provides additional features for managing the site, such as listing doctors and departments with the help of an admin panel.
+Hospi is a small clinic doctor booking website developed with Django and Bootstrap. This project allows patients to book a slot with a doctor using their phone number, helping to save time. The hospital can easily manage tokens and patients. The website also provides additional features for managing the site, such as listing doctors and departments with the help of an admin panel.
 
 ## Features
 
